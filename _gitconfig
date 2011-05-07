@@ -3,3 +3,5 @@
 	email = giacomo.ritucci@email.it
 [push]
 	default = matching
+[core]
+	excludesfile = /home/giacomo/.gitignore_global

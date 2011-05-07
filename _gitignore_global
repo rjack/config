@@ -1,0 +1,11 @@
+# Global .gitignore
+# =================
+#
+# Add this file to your config with:
+#
+#     git config --global core.excludesfile ~/.gitignore_global
+#
+# [Reference](http://help.github.com/git-ignore/).
+#
+*.swp
+*~
