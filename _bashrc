@@ -6,5 +6,8 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+
+GIT_PS1_SHOWDIRTYSTATE=1
+PS1='[\u@\h \W]$(__git_ps1)\$ '
+
 export EDITOR='vim'
