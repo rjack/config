@@ -11,3 +11,6 @@ GIT_PS1_SHOWDIRTYSTATE=1
 PS1='[\u@\h \W]$(__git_ps1)\$ '
 
 export EDITOR='vim'
+
+# pip funziona solo se virtualenv attivati
+export PIP_REQUIRE_VIRTUALENV=true
