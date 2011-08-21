@@ -10,7 +10,7 @@
 # possible, but leave them commented.  Uncommented options change a
 # default value.
 
-#Port 22
+Port 2222
 #AddressFamily any
 #ListenAddress 0.0.0.0
 #ListenAddress ::
@@ -37,7 +37,7 @@
 # Authentication:
 
 #LoginGraceTime 2m
-#PermitRootLogin yes
+PermitRootLogin no
 #StrictModes yes
 #MaxAuthTries 6
 #MaxSessions 10
