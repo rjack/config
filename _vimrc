@@ -83,6 +83,8 @@ if has("autocmd")
 
   autocmd BufNewFile,BufRead *.json set ft=javascript
 
+  call pathogen#infect()
+
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
@@ -99,6 +101,7 @@ if has("autocmd")
   autocmd FileType xml setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType coffee setlocal ts=4 sts=4 sw=4 expandtab
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
