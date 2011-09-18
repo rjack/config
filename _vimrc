@@ -102,6 +102,7 @@ if has("autocmd")
   autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
   autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
   autocmd FileType coffee setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd BufRead *.md set ft=markdown
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
