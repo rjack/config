@@ -3,7 +3,7 @@
 #
 
 GIT_PS1_SHOWDIRTYSTATE=1
-PS1='[\A \u@\h \W]$(__git_ps1)\$ '
+PS1="${PS1%%\\$ }"'$(__git_ps1)'"\$ "
 
 export EDITOR='vim'
 
