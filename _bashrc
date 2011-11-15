@@ -1,7 +1,3 @@
-#
-# ~/.bashrc
-#
-
 GIT_PS1_SHOWDIRTYSTATE=1
 PS1="${PS1%%\\$ }"'$(__git_ps1)'"\$ "
 
@@ -13,4 +9,6 @@ export PIP_REQUIRE_VIRTUALENV=true
 
 # eseguibili dei moduli node.js
 NODE_MODULES_BIN_DIR="$HOME/node_modules/.bin"
-[[ -d $NODE_MODULES_BIN_DIR ]] && PATH="${PATH}:$NODE_MODULES_BIN_DIR"
+if [[ -d $NODE_MODULES_BIN_DIR ]]; then
+	 PATH="${PATH}:$NODE_MODULES_BIN_DIR"
+fi
