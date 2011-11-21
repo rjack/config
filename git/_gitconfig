@@ -4,4 +4,4 @@
 [push]
 	default = matching
 [core]
-	excludesfile = /home/giacomo/.gitignore_global
+	excludesfile = /home/gcm/.gitignore_global
