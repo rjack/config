@@ -143,10 +143,10 @@ bind ^] paste [.]
 # hardstatus alwaysignore
 # hardstatus alwayslastline "%Lw"
 
-# bind = resize =
-# bind + resize +1
-# bind - resize -1
-# bind _ resize max
+bind = resize =
+bind + resize +10
+bind - resize -10
+bind _ resize max
 #
 # defnonblock 1
 # blankerprg rain -d 100
