@@ -1,5 +1,5 @@
 dropboxd &
 xrdb -merge .Xresources
-xrandr --output VGA1 --auto --above LVDS1
-xrandr --output LVDS1 --auto
+xrandr --output VGA-1 --auto --above LVDS-1
+xrandr --output LVDS-1 --auto
 exec xmonad
