@@ -1,1 +1,4 @@
-I miei file di configurazione.
+~/my/config
+===========
+
+Ogni branch è dedicata a un PC.
