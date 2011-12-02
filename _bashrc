@@ -6,13 +6,6 @@ export EDITOR='vim'
 # pip funziona solo se virtualenv attivati
 export PIP_REQUIRE_VIRTUALENV=true
 
-
-# eseguibili dei moduli node.js
-NODE_MODULES_BIN_DIR="$HOME/node_modules/.bin"
-if [[ -d $NODE_MODULES_BIN_DIR ]]; then
-	 PATH="${PATH}:$NODE_MODULES_BIN_DIR"
-fi
-
 if [[ -d $HOME/.xmonad ]]; then
 	export _JAVA_AWT_WM_NONREPARENTING=1
 fi
