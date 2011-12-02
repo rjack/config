@@ -1,5 +1,6 @@
 dropboxd &
 xrdb -merge .Xresources
+xsetroot -cursor_name left_ptr
 xrandr --output VGA-1 --auto --above LVDS-1
 xrandr --output LVDS-1 --auto
 exec xmonad
