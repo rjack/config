@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+if [[ $UID -ne 0 ]]; then
+	echo "Devi essere root"
+	exit 1
+fi
+
+# TODO: se non esiste l'utente charles
+# TODO:     echo "Crea l'utente charles e la sua home"
+# TODO:     exit 1
+
+iptables -t nat -F
+iptables -t nat -A OUTPUT -p tcp --dport 80 -m owner ! --uid-owner charles -j REDIRECT --to-ports 8888
+
+xhost +local:all
+su charles -s /bin/bash -c "_JAVA_AWT_WM_NONREPARENTING=1 DISPLAY=:0 charles"
+
+iptables -t nat -F
