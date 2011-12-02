@@ -3,9 +3,13 @@ PS1="\A ${PS1%%\\$ }"'$(__git_ps1)'"\$ "
 
 export EDITOR='vim'
 
+# Rimuove l'inutile directory ~/Desktop
+rmdir ~/Desktop > /dev/null 2>&1
+
 # pip funziona solo se virtualenv attivati
 export PIP_REQUIRE_VIRTUALENV=true
 
+# Java non va d'accordo con xmonad e viceversa
 if [[ -d $HOME/.xmonad ]]; then
 	export _JAVA_AWT_WM_NONREPARENTING=1
 fi
