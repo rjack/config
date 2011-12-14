@@ -5,3 +5,7 @@ BIN_DIR="$HOME/bin"
 # eseguibili dei moduli node.js
 NODE_MODULES_BIN_DIR="$HOME/node_modules/.bin"
 [[ -d $NODE_MODULES_BIN_DIR ]] && PATH="${PATH}:$NODE_MODULES_BIN_DIR"
+
+# eseguibili haskell
+CABAL_BIN_DIR="$HOME/.cabal/bin"
+[[ -d $CABAL_BIN_DIR ]] && PATH="${PATH}:$CABAL_BIN_DIR"
