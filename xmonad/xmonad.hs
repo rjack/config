@@ -10,6 +10,8 @@
 import XMonad
 import Data.Monoid
 import System.Exit
+import XMonad.Hooks.ICCCMFocus
+import XMonad.Hooks.SetWMName
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -242,7 +244,7 @@ myEventHook = mempty
 -- Perform an arbitrary action on each internal state change or X event.
 -- See the 'XMonad.Hooks.DynamicLog' extension for examples.
 --
-myLogHook = return ()
+-- myLogHook = return ()
 
 ------------------------------------------------------------------------
 -- Startup hook
@@ -273,7 +275,7 @@ defaults = defaultConfig {
         focusFollowsMouse  = myFocusFollowsMouse,
         borderWidth        = myBorderWidth,
         modMask            = myModMask,
-        numlockMask        = myNumlockMask,
+        -- numlockMask        = myNumlockMask,
         workspaces         = myWorkspaces,
         normalBorderColor  = myNormalBorderColor,
         focusedBorderColor = myFocusedBorderColor,
@@ -286,6 +288,7 @@ defaults = defaultConfig {
         layoutHook         = myLayout,
         manageHook         = myManageHook,
         handleEventHook    = myEventHook,
-        logHook            = myLogHook,
+        logHook            = takeTopFocus,
+        -- logHook            = myLogHook,
         startupHook        = myStartupHook
     }
