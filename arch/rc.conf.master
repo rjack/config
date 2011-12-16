@@ -40,7 +40,7 @@ USECOLOR="yes"
 #     blacklist module
 #   See "man modprobe.conf" for details.
 #
-MODULES=(fuse acpi-cpufreq vboxdrv vboxnetflt)
+MODULES=(fuse)
 
 # Udev settle timeout (default to 30)
 UDEV_TIMEOUT=30
@@ -60,7 +60,7 @@ USELVM="no"
 #
 # HOSTNAME: Hostname of machine. Should also be put in /etc/hosts
 #
-HOSTNAME="giacomo"
+HOSTNAME="minimo"
 
 # Use 'ip addr' or 'ls /sys/class/net/' to see all available interfaces.
 #
@@ -84,7 +84,7 @@ HOSTNAME="giacomo"
 # netmask=
 # gateway=
 
-WIRED_INTERFACE="eth0"
+WIRED_INTERFACE="usb0"
 WIRELESS_INTERFACE="wlan0"
 WPA_DRIVER="nl80211"
 
@@ -120,4 +120,4 @@ DHCP_TIMEOUT='60'
 #
 # If you use a network filesystem you should enable 'netfs'.
 #
-DAEMONS=(syslog-ng dbus acpid net-auto-wired net-auto-wireless netfs @cupsd @sshd @crond @alsa @cpufreq)
+DAEMONS=(hwclock syslog-ng dbus @net-auto-wired @net-auto-wireless @crond @acpid @sshd @alsa)
