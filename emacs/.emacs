@@ -14,6 +14,12 @@
 (require 'coffee-mode)
 
 
+;; Clojure
+(add-to-list 'load-path "~/.emacs.d/vendor/clojure-mode")
+(ignore-errors (require 'clojure-mode))
+(ignore-errors (require 'clojure-test-mode))
+
+
 ;; Haskell
 (load "/usr/share/emacs/site-lisp/haskell-mode/haskell-site-file")
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
