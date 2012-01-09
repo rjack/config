@@ -5,3 +5,5 @@
 	default = upstream
 [core]
 	excludesfile = /home/gcm/.gitignore_global
+[color]
+	ui = auto
