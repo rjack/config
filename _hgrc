@@ -1,2 +1,16 @@
 [ui]
 username = Giacomo Ritucci <gritucci@bitbang.it>
+
+[extensions]
+hgext.record =
+color =
+pager =
+
+[color]
+mode = auto
+
+[pager]
+pager = LESS='FSRX' less
+
+[web]
+cacerts = /etc/ssl/certs/ca-certificates.crt
