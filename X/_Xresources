@@ -2,3 +2,4 @@ URxvt*foreground:White
 URxvt*background:Black
 URxvt*fading:20
 URxvt*font:xft:Terminus:size=12:antialias=true
+URxvt*termName: rxvt-256color
