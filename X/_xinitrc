@@ -1,6 +1,0 @@
-dropboxd &
-xrdb -merge .Xresources
-xrandr --output VGA1 --auto --above LVDS1
-xrandr --output LVDS1 --auto
-xsetroot -cursor_name left_ptr
-exec xmonad
