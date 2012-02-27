@@ -1007,6 +1007,7 @@ application/x-gnumeric				gnumeric
 application/x-gtar				gtar
 # application/x-gzip
 application/x-hdf				hdf
+application/x-httpd-php				php php5
 application/x-java-jnlp-file			jnlp
 application/x-latex				latex
 application/x-mobipocket-ebook			prc mobi
