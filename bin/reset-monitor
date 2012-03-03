@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-xrandr --output VGA-1 --auto --above LVDS-1
-xrandr --output LVDS-1 --auto
+lvds=$(xrandr -q | sed -n 's/^\(LVDS[^ ]\+\) connected .*/\1/p')
+vga=$(xrandr -q | sed -n 's/^\(VGA[^ ]\+\) connected .*/\1/p')
+xrandr --output $vga --auto --above $lvds
+xrandr --output $lvds --auto
