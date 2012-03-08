@@ -10,5 +10,10 @@ NODE_MODULES_BIN_DIR="$HOME/node_modules/.bin"
 CABAL_BIN_DIR="$HOME/.cabal/bin"
 [[ -d $CABAL_BIN_DIR ]] && PATH="${PATH}:$CABAL_BIN_DIR"
 
+# leiningen per clojure
 CLJ_BIN_DIR="$HOME/.lein/bin"
 [[ -d $CLJ_BIN_DIR ]] && PATH="${PATH}:$CLJ_BIN_DIR"
+
+# eseguibili ruby
+RUBY_BIN_DIR="$HOME/.gem/ruby/1.9.1/bin"
+[[ -d $RUBY_BIN_DIR ]] && PATH="${PATH}:$RUBY_BIN_DIR"
