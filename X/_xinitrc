@@ -1,5 +1,0 @@
-dropboxd &
-xrdb -merge .Xresources
-xsetroot -cursor_name left_ptr
-reset-monitor
-exec xmonad
