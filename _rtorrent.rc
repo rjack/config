@@ -1,11 +1,8 @@
-directory = ~/my/downloads
-session = ~/my/downloads/torrents
-
-schedule = watch_directory,10,10,load_start=~/my/downloads/*.torrent
-schedule = tied_directory,10,10,start_tied=
-schedule = untied_directory,10,10,close_untied=
+directory = ~/my/downloads/torrents/incoming
+session = ~/my/downloads/torrents/session
 
 encryption = allow_incoming,try_outgoing
 
 dht = auto
 port_range = 51732-51732
+upload_rate = 10
